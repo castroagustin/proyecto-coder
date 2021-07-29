@@ -1,0 +1,240 @@
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 14px;
+  }
+  footer,
+  nav,
+  .container {
+    padding-right: 130px;
+    padding-left: 130px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 14px;
+  }
+  footer,
+  nav,
+  .container {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+
+  footer {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 1fr;
+    grid-row-gap: 60px;
+    text-align: center;
+    align-items: center;
+    .footerLogo {
+      grid-column: 1 / span 1;
+    }
+    .footerSocial {
+      grid-column: 2 / span 1;
+      grid-row: 1 / span 1;
+      justify-self: center;
+      .footerTitle {
+        display: none;
+      }
+    }
+    .footerSocialContainer {
+      > a {
+        margin: 0 0.5rem;
+      }
+    }
+    .footerNav {
+      grid-column: 1 / span 1;
+      justify-self: center;
+    }
+    a,
+    .footerTitle {
+      font-size: 1.4rem;
+      line-height: 2rem;
+    }
+    .footerApp {
+      grid-column: 2 / span 1;
+      @include flex-box(unset, center);
+      justify-self: center;
+      flex-direction: column;
+    }
+  }
+}
+@media only screen and (max-width: 900px) {
+  .textContainer {
+    width: 100%;
+  }
+  .container--colRev {
+    flex-direction: column-reverse;
+  }
+  .width50 {
+    width: 50%;
+  }
+  nav {
+    .navMenuIcon {
+      display: block;
+    }
+    .iconBars {
+      opacity: 1;
+    }
+    .navMenu {
+      display: flex;
+      flex-direction: column;
+      color: #fff;
+      margin-top: 20px;
+      > li {
+        margin: 10px 0;
+        > a {
+          color: #fff;
+          font-size: 2rem;
+          &:hover {
+            color: #a4bfd7;
+          }
+        }
+        &:hover .navSubmenu {
+          display: none;
+        }
+      }
+    }
+    .navLogoContainer {
+      display: block;
+    }
+    .wrap-menu {
+      .toggler {
+        display: block;
+      }
+    }
+    .overlay {
+      background-color: #0d3b66e6;
+      backdrop-filter: blur(12px);
+      top: 0;
+      padding: 10px 20px;
+      left: 0;
+      transform: translateX(-100%);
+      width: 60vw;
+      height: 100vh;
+      position: fixed;
+      width: fit-content;
+      transition: all 0.4s ease;
+    }
+  }
+
+  section {
+    > img {
+      width: 80%;
+      margin-bottom: 40px;
+    }
+  }
+
+  .imgMockUp {
+    width: 100%;
+  }
+  header {
+    > img {
+      margin-top: 70px;
+      width: 100%;
+    }
+  }
+
+  .card {
+    flex-direction: row;
+  }
+  .card {
+    max-width: 100%;
+  }
+  .card__img {
+    margin: 0 20px;
+  }
+  .card__textContainer {
+    @include flex-box(center, unset);
+    flex-direction: column;
+  }
+
+  .card__textContainer {
+    text-align: start;
+  }
+  .card__title {
+    margin-top: 0;
+  }
+
+  .container {
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 13px;
+  }
+  footer,
+  nav,
+  .container {
+    padding-right: 70px;
+    padding-left: 70px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 11px;
+  }
+  footer,
+  nav,
+  .container {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+  .card {
+    flex-direction: column;
+  }
+  .card__textContainer {
+    text-align: center;
+  }
+  .card__title {
+    margin-top: 25px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  html {
+    font-size: 10px;
+  }
+
+  footer {
+    row-gap: 30px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    text-align: center;
+    align-items: center;
+    .footerLogo {
+      grid-row: 1 / span 1;
+    }
+    .footerSocial {
+      grid-column: 1 / span 1;
+      grid-row: 2 / span 1;
+      justify-self: center;
+    }
+    .footerSocialContainer {
+      > a {
+        height: 4rem;
+        width: 4rem;
+      }
+    }
+    .footerNav {
+      grid-row: 3 / span 1;
+    }
+    .footerApp {
+      grid-column: 1 / span 1;
+      grid-row: 4 / span 4;
+    }
+    a,
+    .footerTitle {
+      font-size: 2rem;
+      line-height: 3rem;
+    }
+    i {
+      font-size: 2rem;
+    }
+    span {
+      font-size: 2rem;
+      line-height: 2rem;
+    }
+  }
+}

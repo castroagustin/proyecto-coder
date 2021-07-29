@@ -1,0 +1,168 @@
+$fontFamily-h: "Dosis", sans-serif;
+$fontFamily-p: "Poppins", sans-serif;
+
+$colorPrimary: #0d3b66;
+$colorPrimaryDark: #09233d;
+$colorPrimaryLight: #145694;
+$colorGrey: #f7f7f7;
+$colorBlack: #2d2d2d;
+
+$shadowFull: 0px 0px 10px #0004;
+$shadowBottom: 0px 28px 40px -29px #0004;
+
+@mixin flex-box($mainAxis, $crossAxis) {
+  display: flex;
+  justify-content: $mainAxis;
+  align-items: $crossAxis;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $fontFamily-p;
+  padding-top: calc(3rem + 20px);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+footer,
+nav,
+.container {
+  padding: 10px 200px;
+}
+
+header {
+  @include flex-box(space-between, center);
+  padding-top: 40px;
+  padding-bottom: 40px;
+  .btn {
+    background-color: $colorPrimary;
+    margin-top: 20px;
+  }
+  > img {
+    width: 40%;
+  }
+}
+.imgHeader {
+  height: 300px;
+}
+
+li {
+  list-style: none;
+}
+section {
+  li {
+    list-style: inside;
+  }
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+p,
+li {
+  color: #a5a5a5;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+ul {
+  padding-left: 0;
+}
+
+section {
+  > img {
+    width: 35%;
+    max-height: 350px;
+  }
+}
+
+.imgMockUp {
+  max-height: none;
+}
+
+.greyBg {
+  background-color: $colorGrey;
+}
+.gradientGrey {
+  background: linear-gradient(135deg, #fdfdfd 0%, #f7f7f7 100%);
+}
+
+.container {
+  @include flex-box(space-between, center);
+  flex-wrap: wrap;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  max-width: 100%;
+  &--col {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.textContainer {
+  width: 60%;
+  max-width: 750px;
+  &__title {
+    color: $colorBlack;
+    font-family: $fontFamily-h;
+    font-weight: 700;
+    font-size: 3.1rem;
+    line-height: 3.1rem;
+    &--header {
+      font-size: 3.4rem;
+      line-height: 3.4rem;
+    }
+  }
+  &__subtitle {
+    margin: 10px 0 30px 0;
+  }
+  &__text {
+    margin-top: 20px;
+  }
+}
+
+.banner {
+  background-color: #0d3b66;
+  @include flex-box(center, unset);
+}
+.banner__title {
+  color: #fff;
+  text-align: center;
+  max-width: 800px;
+  font-size: 4rem;
+  line-height: 4rem;
+}
+
+.rounded {
+  border-radius: 20px;
+}
+
+.contentContainer {
+  z-index: 20;
+}
+
+.btnPrimary {
+  background-color: $colorPrimary;
+  font-size: 1.2rem;
+  padding: 8px 15px;
+  color: #fff;
+  border-radius: 10px;
+  &:hover {
+    background-color: $colorPrimaryDark;
+  }
+  &:focus {
+    background-color: $colorPrimary;
+  }
+  &--center {
+    width: 200px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}

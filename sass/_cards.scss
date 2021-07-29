@@ -1,0 +1,32 @@
+.container__cards {
+  @include flex-box(center, unset);
+  flex-wrap: wrap;
+  column-gap: 30px;
+  width: 100%;
+  margin-top: 60px;
+}
+.card {
+  @include flex-box(unset, center);
+  flex-direction: column;
+  background-color: #fff;
+  max-width: 400px;
+  padding: 30px 10px;
+  box-shadow: $shadowFull;
+  border-radius: 20px;
+  margin-top: 30px;
+  &__img {
+    width: 8rem;
+    height: unset;
+  }
+  &__text {
+    font-weight: 200;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  &__title {
+    @extend .card__text;
+    margin: 25px 0 15px 0;
+    color: $colorBlack;
+    font-weight: 500;
+  }
+}

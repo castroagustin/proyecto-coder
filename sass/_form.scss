@@ -1,0 +1,31 @@
+.bodyForm {
+  @include flex-box(space-between, unset);
+  flex-direction: column;
+}
+.formHeader {
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 300px;
+}
+.contactanosForm {
+  padding-top: 0;
+  margin-top: -150px;
+  flex-direction: column;
+  form {
+    box-shadow: $shadowBottom;
+    border-radius: 20px;
+    padding: 30px;
+    font-size: 1.25rem;
+    background-color: #fff;
+    text-align: start;
+    a {
+      color: $colorPrimary;
+      font-weight: 500;
+      text-decoration: underline;
+    }
+  }
+}
+.form-check-input:checked {
+  background-color: $colorPrimary;
+  border-color: $colorPrimary;
+}

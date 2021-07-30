@@ -44,6 +44,9 @@ header {
     background-color: $colorPrimary;
     margin-top: 20px;
     color: #fff;
+    &:hover {
+      color: #fff;
+    }
   }
   > img {
     width: 40%;

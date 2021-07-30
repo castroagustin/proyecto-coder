@@ -10308,6 +10308,10 @@ header .btn {
   color: #fff;
 }
 
+header .btn:hover {
+  color: #fff;
+}
+
 header > img {
   width: 40%;
 }

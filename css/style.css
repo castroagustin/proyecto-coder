@@ -10415,7 +10415,7 @@ section > img {
 }
 
 .textContainer__subtitle {
-  margin: 10px 0 30px 0;
+  margin: 15px 0 30px 0;
 }
 
 .textContainer__text {
@@ -10992,7 +10992,7 @@ footer .footerSocialContainer > a i {
     width: 100%;
   }
   header > img {
-    margin-top: 70px;
+    margin-top: 40px;
     width: 100%;
   }
   .card {

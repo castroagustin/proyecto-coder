@@ -40,16 +40,17 @@ header {
   @include flex-box(space-between, center);
   padding-top: 40px;
   padding-bottom: 40px;
-  .btn {
-    background-color: $colorPrimary;
-    margin-top: 20px;
-    color: #fff;
-    &:hover {
-      color: #fff;
-    }
-  }
+
   > img {
     width: 40%;
+  }
+}
+.btn {
+  background-color: $colorPrimary;
+  margin-top: 20px;
+  color: #fff;
+  &:hover {
+    color: #fff;
   }
 }
 .header--onlyText {
@@ -101,6 +102,31 @@ section {
   max-height: none;
 }
 
+.imgContainer {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  img {
+    width: 100%;
+  }
+}
+
+.btnContainer {
+  img {
+    width: 170px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+}
+
+.bgContainer {
+  background-color: #f9f9f9;
+  @include flex-box(space-between, unset);
+  flex-wrap: wrap;
+  position: relative;
+  box-shadow: 0px 33px 39px -31px rgba(90, 90, 90, 0.25);
+  border-radius: 20px;
+}
 .greyBg {
   background-color: $colorGrey;
 }
@@ -125,6 +151,16 @@ section {
 .textContainer {
   width: 60%;
   max-width: 750px;
+  &--app {
+    width: 40%;
+    min-height: 100%;
+    @include flex-box(space-between, unset);
+    flex-direction: column;
+    padding: 5% 0 5% 6%;
+    .textContainer__text {
+      padding-bottom: 20%;
+    }
+  }
   &__title {
     color: $colorBlack;
     font-family: $fontFamily-h;

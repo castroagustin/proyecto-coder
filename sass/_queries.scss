@@ -160,6 +160,19 @@
     justify-content: center;
     text-align: center;
   }
+
+  .textContainer--app {
+    padding: 5%;
+    .textContainer__text {
+      padding-bottom: 10%;
+    }
+  }
+  .imgContainer {
+    width: 100%;
+  }
+  .bgContainer--colRev {
+    flex-direction: column-reverse;
+  }
 }
 @media only screen and (max-width: 768px) {
   html {

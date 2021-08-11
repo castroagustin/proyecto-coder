@@ -10379,6 +10379,11 @@ section > img {
   width: 170px;
   margin-bottom: 10px;
   margin-right: 10px;
+  transition: all 0.2s;
+}
+
+.btnContainer img:hover {
+  transform: scale(1.05);
 }
 
 .bgContainer {
@@ -10781,6 +10786,10 @@ nav .wrap-menu .toggler:checked ~ .iconBars {
   border-color: #0d3b66;
 }
 
+.form-control:focus {
+  box-shadow: none;
+}
+
 footer {
   background-color: #0d3b66;
   padding-bottom: 90px;
@@ -10843,6 +10852,11 @@ footer .footerAppContainer {
   padding: 10px;
   width: fit-content;
   margin-bottom: 5px;
+  transition: all 0.2s;
+}
+
+footer .footerAppContainer:hover {
+  transform: scale(1.05);
 }
 
 footer .footerAppContainer i {
@@ -10856,15 +10870,26 @@ footer .footerSocialContainer {
 footer .footerSocialContainer > a {
   height: 3rem;
   width: 3rem;
-  background-color: #fff;
+  background-color: #09233d;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-right: 1rem;
+  transition: all 0.2s;
 }
 
 footer .footerSocialContainer > a i {
+  color: #fff;
+  transition: color 0.2s;
+}
+
+footer .footerSocialContainer > a:hover {
+  background-color: #fff;
+  transform: scale(1.05);
+}
+
+footer .footerSocialContainer > a:hover i {
   color: #0d3b66;
 }
 

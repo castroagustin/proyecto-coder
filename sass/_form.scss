@@ -29,3 +29,6 @@
   background-color: $colorPrimary;
   border-color: $colorPrimary;
 }
+.form-control:focus {
+  box-shadow: none;
+}

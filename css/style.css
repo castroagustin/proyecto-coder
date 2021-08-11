@@ -10527,6 +10527,11 @@ section > img {
   align-items: flex-start;
   position: relative;
   box-shadow: 0px 9px 14px -2px #0003;
+  transition: all 0.2s;
+}
+
+.testimonials:hover {
+  transform: scale(1.02);
 }
 
 .testimonials--textDark {
@@ -10728,6 +10733,11 @@ nav .wrap-menu .toggler:checked ~ .iconBars {
   border: none;
   border-radius: 20px;
   margin-top: 30px;
+  transition: all 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
 }
 
 .card__img {
